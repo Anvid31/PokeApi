@@ -1,0 +1,158 @@
+body {
+  background: rgb(212, 176, 160);
+  background: linear-gradient(
+    90deg,
+    rgb(180, 127, 102) 0%,
+    rgb(180, 166, 119) 54%,
+    rgb(158, 163, 116) 82%
+  );
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Oswald", sans-serif;
+}
+
+.title{
+  font-size: 20px;
+}
+
+.Filtros {
+  background-color: #b3ff0054;
+  max-width: 190px;
+  height: 10px;
+  padding: 10px;
+  /* text-align: center; */
+  border: 2px solid white;
+  border-radius: 5px;
+  /* box-shadow: 3px 3px 2px rgb(249, 255, 85); */
+}
+
+.Filtros:focus {
+  color: rgb(0, 0, 0);
+  background-color: #b3ff008f;
+  outline-color: rgb(173, 175, 70);
+  box-shadow: -3px -3px 15px rgb(164, 190, 46);
+  transition: .1s;
+  transition-property: box-shadow;
+}
+.addForm {
+  background-color: #51521c85;
+}
+
+.pokemones{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 16px;
+  justify-items: center;
+  padding: 15px;
+  color: rgb(0, 0, 0);
+  position: relative;
+  font-family: sans-serif;
+}
+
+.box {
+  padding: 5px;
+  margin-top:20px;
+ border-radius: 20px;
+ background: #e2ddcd;
+ padding: 20px;
+ border: 2px solid #b3c938;
+ transition: 0.5s ease-out;
+ overflow: visible;
+ position: relative;
+}
+
+.Btn { 
+  transform: translate(-50%, 125%);
+ width: 60%;
+ border-radius: 5rem;
+ border: none;
+ background-color: #008bf8;
+ color: #fff;
+ font-size: 1rem;
+ padding: .5rem 1rem;
+ position: absolute;
+ left: 50%;
+ bottom: 0;
+ opacity: 0;
+ transition: 0.3s ease-out;
+}
+
+
+.box:hover .Btn2 {
+  transform: translate(-50%, 50%);
+  opacity: 1;
+ }
+
+ .btn2 {
+  transition: all 0.3s ease-in-out;
+  font-family: "Dosis", sans-serif;
+}
+
+
+.Btn2 { 
+  transform: translate(-50%, 125%);
+ width: 60%;
+ border-radius: 5rem;
+ border: none;
+ background-color: #008bf8;
+ color: #fff;
+ font-size: 1rem;
+ padding: .5rem 1rem;
+ position: absolute;
+ left: 50%;
+ bottom: 0;
+ opacity: 0;
+ transition: 0.3s ease-out;
+}
+
+.box:hover {
+  border-color: #008bf8;
+  box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
+ }
+ 
+ .box:hover .Btn {
+  transform: translate(-50%, -900%);
+  opacity: 1;
+ }
+
+ .btn {
+  transition: all 0.3s ease-in-out;
+  font-family: "Dosis", sans-serif;
+}
+
+.FilterBtn {
+  /* Variables */
+  --button_radius: 0.4em;
+  --button_color: #ffffffc2;
+  --button_outline_color: #d3c054b4;
+  font-size: 11px;
+  font-weight: bold;
+  margin-top: 10px;
+  border: none;
+  border-radius: var(--button_radius);
+  background: var(--button_outline_color);
+}
+
+.button_top {
+  display: block;
+  box-sizing: border-box;
+  border: 2px solid var(--button_outline_color);
+  border-radius: var(--button_radius);
+  padding: 0.75em 1.5em;
+  background: var(--button_color);
+  color:#51521cab;
+  transform: translateY(-0.2em);
+  transition: transform 0.1s ease;
+}
+
+.button_top:hover{
+  color: #51521c;
+}
+
+.FilterBtn:hover .button_top {
+  transform: translateY(-0.33em);
+}
+
+.FilterBtn:active .button_top {
+  transform: translateY(0);
+}
